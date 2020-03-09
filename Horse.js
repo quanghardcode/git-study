@@ -1,4 +1,8 @@
-function Dog() {
-
+function Horse(name) {
+    this.name = name;
 }
-module.export = Dog;
+Horse.prototype.speed = function() {
+    console.log(this.name +' run is ...');
+    
+}
+module.export = Horse;
